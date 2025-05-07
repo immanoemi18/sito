@@ -38,8 +38,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # Updated to v2
+        uses: actions/upload-artifact@v3  # Updated to v3 as per error message
         with:
+          name: github-pages
           path: ./site
 
   deploy:
